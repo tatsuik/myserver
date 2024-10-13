@@ -1,0 +1,10 @@
+services:
+  myserver:
+    build: .
+    volumes:
+      - .:/app
+    tty: true
+    # ports:
+    #   - "8888:8888"
+      # - .:/app
+
