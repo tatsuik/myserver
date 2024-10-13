@@ -692,6 +692,8 @@ version = "0.1.0"
 dependencies = [
  "actix-web",
  "bytes",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
