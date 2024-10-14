@@ -25,6 +25,5 @@ fi
 
 # このスクリプト自体は root で実行されているので、uid/gid 調整済みの builder ユーザー
 # として指定されたコマンドを実行する。
-# exec setpriv --reuid=$USER --regid=$USER --init-groups "$@"
+exec setpriv --reuid=$uid --regid=$gid --init-groups "$@"
 
-exec cargo test
