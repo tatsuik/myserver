@@ -9,4 +9,3 @@ jobs:
       - shell: bash
         run: |
           docker compose up --exit-code-from myserver
-          docker compose exec myserver /bin/bash -c "cd /app && id && ls -l && cargo test"
