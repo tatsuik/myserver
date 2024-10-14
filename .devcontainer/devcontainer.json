@@ -15,5 +15,6 @@
             ]
         }
     },
-    "postStartCommand": "bash"
+    "postStartCommand": "bash",
+    "remoteUser": "dev"
 }
