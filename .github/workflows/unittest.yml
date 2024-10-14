@@ -8,5 +8,5 @@ jobs:
       - uses: actions/checkout@v4
       - shell: bash
         run: |
-          docker compose up
+          docker compose up --exit-code-from myserver
           docker compose exec myserver /bin/bash -c "cd /app && id && ls -l && cargo test"
