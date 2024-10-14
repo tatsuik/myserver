@@ -1,0 +1,12 @@
+name: unittest
+on:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - shell: bash
+        run: |
+          docker compose up -d
+          docker compose exec myserver -T /bin/bash -c "cd /app && cargo test"
