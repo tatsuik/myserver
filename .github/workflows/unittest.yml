@@ -9,4 +9,4 @@ jobs:
       - shell: bash
         run: |
           docker compose up -d
-          docker compose exec myserver -T /bin/bash -c "cd /app && cargo test"
+          docker compose exec myserver /bin/bash -c "cd /app && cargo test"
